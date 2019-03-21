@@ -1,0 +1,213 @@
+body {
+  font: 16px "Trebuchet MS", sans-serif, Futura, "Century Gothic";
+  margin: 20px;
+}
+
+body {
+    background-color: #F9FFFE;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.blue, .control {
+    background: #81a1c1;
+}
+
+.green, .regTerrain {
+    background: #a3be8c;
+}
+
+.yellow, .flyTerrain {
+    background: #ebcb8b;
+}
+
+.red, .wall {
+    background: #bf616a;
+}
+
+.purple, .defTerrain {
+    background: #b48ead;
+}
+
+.grey {
+    background: #eeeeee;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.container {
+    padding-top: 2rem;
+    background: #1A1D24;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: auto;
+    width: 728px;
+    height: 1024px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 12fr 2fr;
+}
+
+.battlefield {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+    column-gap: 6px;
+}
+
+.squad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.view {
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+.tile {
+    position: relative;
+    padding-top: 100%;
+    text-align: center;
+}
+
+.tile {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.defensive {
+    background-image: url("assets/defensive.svg")
+}
+
+.mountain {
+    background-image: url("assets/mountain.svg")
+}
+
+.trench {
+    background-image: url("assets/trench.svg") 
+}
+
+.forest {
+    background-image: url("assets/forest.svg") 
+}
+
+.stop {
+    background-image: url("assets/stop.svg")
+}
+
+.wall {
+    background-image: url("assets/wall.svg")
+}
+
+.wall-broken {
+    background-image: url("assets/wall-broken.svg")
+}
+
+.focus {
+    background-image: url("assets/focus-gradient.svg")
+}
+
+.interface {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 5px;
+    margin: auto;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.interface {
+    width: 90%;
+}
+
+.control {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.control {
+    position: relative;
+    padding-top: 100%;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text, .label {
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label {
+    color: white;
+    background: black;
+    top: 85%;
+    font-size: 100%;
+    padding: 0 1rem 0 1rem;
+}
+              
+.back {
+    color: #ffffff;
+}
+
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 800ms linear;
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 800ms linear;
+}
